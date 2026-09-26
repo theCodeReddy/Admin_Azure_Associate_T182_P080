@@ -5,6 +5,9 @@ const app = express();
 
 const PORT = process.env.PORT || 8080;
 
+// Parse JSON requests
+app.use(express.json());
+
 // Serve frontend files
 app.use(express.static(path.join(__dirname, "public")));
 
@@ -61,7 +64,8 @@ app.get("/api/courses", (req, res) => {
 });
 
 // API - contact
-app.post("/api/contact", express.json(), (req, res) => {
+app.post("/api/contact", (req, res) => {
+
     const { name, email, message } = req.body;
 
     if (!name || !email || !message) {
@@ -83,7 +87,7 @@ app.post("/api/contact", express.json(), (req, res) => {
 });
 
 // Handle unknown routes
-app.get("*", (req, res) => {
+app.get("/{*splat}", (req, res) => {
     res.sendFile(path.join(__dirname, "public", "index.html"));
 });
 
