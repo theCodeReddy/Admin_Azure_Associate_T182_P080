@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSE Department | P080</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar">
+
+        <div class="logo">
+            <span>🎓</span>
+            CSE Department
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#faculty">Faculty</a></li>
+            <li><a href="#facilities">Facilities</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+    </nav>
+</header>
+
+
+<main>
+
+<!-- HOME -->
+
+<section id="home" class="hero">
+
+    <div class="hero-content">
+
+        <p class="tag">24CC3046-P080</p>
+
+        <h1>
+            Computer Science<br>
+            & Engineering
+        </h1>
+
+        <p>
+            Empowering students through technology,
+            innovation and practical learning.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#about" class="btn primary">Explore Department</a>
+            <a href="#contact" class="btn secondary">Contact Us</a>
+        </div>
+
+    </div>
+
+    <div class="hero-card">
+
+        <div class="icon">💻</div>
+
+        <h2>Technology</h2>
+
+        <p>
+            Learn. Build. Innovate.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section id="about" class="section">
+
+    <div class="section-title">
+
+        <p>ABOUT US</p>
+
+        <h2>Building the Future with Technology</h2>
+
+    </div>
+
+    <div class="about-grid">
+
+        <div>
+
+            <h3>Our Department</h3>
+
+            <p>
+                The Computer Science and Engineering department
+                provides students with strong foundations in
+                programming, software development, data structures,
+                databases, artificial intelligence, cloud computing
+                and modern technologies.
+            </p>
+
+            <p>
+                Our goal is to prepare students for successful
+                careers through practical learning, innovation,
+                research and industry-oriented education.
+            </p>
+
+        </div>
+
+        <div class="stats">
+
+            <div class="stat-card">
+                <h3 id="studentCount">850+</h3>
+                <p>Students</p>
+            </div>
+
+            <div class="stat-card">
+                <h3 id="facultyCount">42+</h3>
+                <p>Faculty</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>15+</h3>
+                <p>Years</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>25+</h3>
+                <p>Labs</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- COURSES -->
+
+<section id="courses" class="section light">
+
+    <div class="section-title">
+
+        <p>ACADEMICS</p>
+
+        <h2>Our Courses</h2>
+
+    </div>
+
+    <div id="courseContainer" class="cards">
+
+        <div class="course-card">
+            <div>📚</div>
+            <h3>Data Structures</h3>
+            <p>Learn algorithms and efficient data organization.</p>
+        </div>
+
+        <div class="course-card">
+            <div>🗄️</div>
+            <h3>Database Management</h3>
+            <p>Learn relational databases and SQL.</p>
+        </div>
+
+        <div class="course-card">
+            <div>🌐</div>
+            <h3>Web Technologies</h3>
+            <p>Build modern and responsive web applications.</p>
+        </div>
+
+        <div class="course-card">
+            <div>☁️</div>
+            <h3>Cloud Computing</h3>
+            <p>Explore cloud platforms and cloud applications.</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FACULTY -->
+
+<section id="faculty" class="section">
+
+    <div class="section-title">
+
+        <p>OUR TEAM</p>
+
+        <h2>Faculty Members</h2>
+
+    </div>
+
+    <div id="facultyContainer" class="faculty-grid">
+
+        <div class="faculty-card">
+
+            <div class="faculty-icon">👨‍🏫</div>
+
+            <h3>Dr. Rajesh Kumar</h3>
+
+            <p>Professor & Head</p>
+
+            <span>Ph.D.</span>
+
+        </div>
+
+        <div class="faculty-card">
+
+            <div class="faculty-icon">👩‍🏫</div>
+
+            <h3>Dr. Priya Sharma</h3>
+
+            <p>Associate Professor</p>
+
+            <span>Ph.D.</span>
+
+        </div>
+
+        <div class="faculty-card">
+
+            <div class="faculty-icon">👨‍💻</div>
+
+            <h3>Dr. Arun Reddy</h3>
+
+            <p>Assistant Professor</p>
+
+            <span>Ph.D.</span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FACILITIES -->
+
+<section id="facilities" class="section light">
+
+    <div class="section-title">
+
+        <p>FACILITIES</p>
+
+        <h2>Department Facilities</h2>
+
+    </div>
+
+    <div class="facility-grid">
+
+        <div class="facility-card">
+            <div>💻</div>
+            <h3>Computer Labs</h3>
+            <p>Modern computer laboratories for practical learning.</p>
+        </div>
+
+        <div class="facility-card">
+            <div>🤖</div>
+            <h3>AI & ML Lab</h3>
+            <p>Practical environment for artificial intelligence research.</p>
+        </div>
+
+        <div class="facility-card">
+            <div>☁️</div>
+            <h3>Cloud Lab</h3>
+            <p>Hands-on experience with modern cloud technologies.</p>
+        </div>
+
+        <div class="facility-card">
+            <div>📖</div>
+            <h3>Digital Library</h3>
+            <p>Access to technical books, journals and learning resources.</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section id="contact" class="section">
+
+    <div class="section-title">
+
+        <p>GET IN TOUCH</p>
+
+        <h2>Contact Department</h2>
+
+    </div>
+
+    <div class="contact-container">
+
+        <div class="contact-info">
+
+            <h3>Department Office</h3>
+
+            <p>📍 ABC University Campus</p>
+
+            <p>📧 cse@abcuniversity.edu</p>
+
+            <p>☎️ +91 98765 43210</p>
+
+            <p>🕒 Monday - Friday, 9:00 AM - 5:00 PM</p>
+
+        </div>
+
+
+        <form id="contactForm">
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Your Name"
+                required
+            >
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Your Email"
+                required
+            >
+
+            <textarea
+                id="message"
+                placeholder="Your Message"
+                rows="5"
+                required
+            ></textarea>
+
+            <button type="submit" class="btn primary">
+                Send Message
+            </button>
+
+            <p id="formMessage"></p>
+
+        </form>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<footer>
+
+    <div class="footer-content">
+
+        <h3>🎓 CSE Department</h3>
+
+        <p>
+            24CC3046-P080 | Azure Web Application
+        </p>
+
+        <p>
+            © 2026 CSE Department. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
